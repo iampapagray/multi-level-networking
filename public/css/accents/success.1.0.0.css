@@ -4468,7 +4468,7 @@ a.text-accent:hover, a.text-accent:focus {
 .blog-comments__actions {
   font-size: 95%; }
   .blog-comments__actions .btn-group button {
-    padding: 0.25rem 0.5625rem; }
+     padding: 0.25rem 0.5625rem;  }
 
 .add-new-post__editor {
   min-height: 400px; }

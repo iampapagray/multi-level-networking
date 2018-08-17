@@ -9,7 +9,7 @@
 (function ($) {
   $(document).ready(function () {
 
-    var toolbarOptions = [
+    /*var toolbarOptions = [
       [{ 'header': [1, 2, 3, 4, 5, false] }],
       ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
       ['blockquote', 'code-block'],
@@ -26,7 +26,7 @@
       },
       placeholder: 'Words can be like x-rays if you use them properly...',
       theme: 'snow'
-    });
+    });*/
 
   });
 })(jQuery);

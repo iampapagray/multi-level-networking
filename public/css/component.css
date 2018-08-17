@@ -1,0 +1,169 @@
+*, *:after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.eot');
+	src:url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon/icomoon.woff') format('woff'),
+		url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../webfonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../webfonts/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../webfonts/MaterialIcons-Regular.woff) format('woff'),
+    url(../webfonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+/* General styles for all types of buttons */
+/* .progress-button {
+	position: relative;
+	display: inline-block;
+	padding: 0 60px;
+	outline: none;
+	border: none;
+	background: #1d9650;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1em;
+	line-height: 4;
+} */
+.progress-button {
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	border: none;
+	background-color: #17c671;
+	box-shadow: none;
+	background: #17c671;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1em;
+	line-height: 2;
+}
+
+.progress-button[disabled],
+.progress-button[disabled].state-loading {
+	cursor: default;
+}
+
+.progress-button .content {
+	position: relative;
+	display: block;
+}
+
+.progress-button .content::before,
+.progress-button .content::after  {
+	position: absolute;
+	right: 20px;
+	color: #fff;
+	font-family: "Material Icons";
+	opacity: 0;
+	-webkit-transition: opacity 0.3s 0.3s;
+	transition: opacity 0.3s 0.3s;
+}
+
+.progress-button .content::before {
+	content: "\e877"; /* Checkmark for success */
+}
+
+.progress-button .content::after {
+	content: "\e5cd"; /* Cross for error */
+}
+
+.progress-button.state-success .content::before,
+.progress-button.state-error .content::after {
+	opacity: 1;
+}
+
+.notransition {
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+
+.progress-button .progress {
+	/*background: #148544;*/
+}
+
+.progress-button .progress-inner {
+	position: absolute;
+	left: 0;
+	background: #17c671;
+}
+
+.progress-button[data-horizontal] .progress-inner {
+	top: 0;
+	width: 0;
+	height: 100%;
+	-webkit-transition: width 0.3s, opacity 0.3s;
+	transition: width 0.3s, opacity 0.3s;
+}
+
+
+/* Fill horizontal */
+/* ====================== */
+
+.progress-button[data-style="fill"][data-horizontal] {
+	overflow: hidden;
+}
+
+.progress-button[data-style="fill"][data-horizontal] .content {
+	z-index: 10;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.progress-button[data-style="fill"][data-horizontal] .content::before,
+.progress-button[data-style="fill"][data-horizontal] .content::after {
+	top: 100%;
+	right: auto;
+	left: 50%;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.progress-button[data-style="fill"][data-horizontal].state-success .content,
+.progress-button[data-style="fill"][data-horizontal].state-error .content {
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+
+/* flip open 3d */
+/* ====================== */
+
+.progress-button[data-style="flip-open"] .content {
+	z-index: 10;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	-webkit-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+}
+
+.progress-button[data-style="flip-open"] .progress {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.progress-button[data-style="flip-open"].state-loading .content {
+	-webkit-transform: rotateX(45deg);
+	transform: rotateX(45deg);
+}

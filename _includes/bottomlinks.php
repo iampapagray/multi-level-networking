@@ -1,0 +1,9 @@
+<script src="public/js/jquery-3.3.1.min.js"></script>
+<script src="public/js/popper.min.js"></script>
+<script src="public/js/bootstrap4.min.js"></script>
+<script src="public/js/chart.min.js"></script>
+<script src="public/js/shards.min.js"></script>
+<script src="public/js/jquery.sharrre.min.js"></script>
+<script src="public/js/extras.1.0.0.min.js"></script>
+<script src="public/js/shards-dashboards.1.0.0.js"></script>
+<script src="public/js/app/app-blog-overview.1.0.0.js"></script>

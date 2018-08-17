@@ -10,7 +10,7 @@
   $(document).ready(function () {
 
     // Blog overview date range init.
-    $('#blog-overview-date-range').datepicker({});
+    //$('#blog-overview-date-range').datepicker({});
 
     //
     // Small Stats
@@ -115,10 +115,10 @@
     // Blog Overview Users
     //
 
-    var bouCtx = document.getElementsByClassName('blog-overview-users')[0];
+    // var bouCtx = document.getElementsByClassName('blog-overview-users')[0];
 
     // Data
-    var bouData = {
+    /*var bouData = {
       // Generate the days labels on the X axis.
       labels: Array.from(new Array(30), function (_, i) {
         return i === 0 ? 1 : i;
@@ -148,10 +148,10 @@
         pointHoverRadius: 2,
         pointBorderColor: 'rgba(255,65,105,1)'
       }]
-    };
+    };*/
 
     // Options
-    var bouOptions = {
+    /*var bouOptions = {
       responsive: true,
       legend: {
         position: 'top'
@@ -201,30 +201,30 @@
         mode: 'nearest',
         intersect: false
       }
-    };
+    };*/
 
     // Generate the Analytics Overview chart.
-    window.BlogOverviewUsers = new Chart(bouCtx, {
-      type: 'LineWithLine',
-      data: bouData,
-      options: bouOptions
-    });
+    // window.BlogOverviewUsers = new Chart(bouCtx, {
+    //   type: 'LineWithLine',
+    //   data: bouData,
+    //   options: bouOptions
+    // });
 
     // Hide initially the first and last analytics overview chart points.
     // They can still be triggered on hover.
-    var aocMeta = BlogOverviewUsers.getDatasetMeta(0);
-    aocMeta.data[0]._model.radius = 0;
-    aocMeta.data[bouData.datasets[0].data.length - 1]._model.radius = 0;
+    // var aocMeta = BlogOverviewUsers.getDatasetMeta(0);
+    // aocMeta.data[0]._model.radius = 0;
+    // aocMeta.data[bouData.datasets[0].data.length - 1]._model.radius = 0;
 
     // Render the chart.
-    window.BlogOverviewUsers.render();
+    // window.BlogOverviewUsers.render();
 
     //
     // Users by device pie chart
     //
 
     // Data
-    var ubdData = {
+    /*var ubdData = {
       datasets: [{
         hoverBorderColor: '#ffffff',
         data: [68.3, 24.2, 7.5],
@@ -235,10 +235,10 @@
         ]
       }],
       labels: ["Desktop", "Tablet", "Mobile"]
-    };
+    };*/
 
     // Options
-    var ubdOptions = {
+    /*var ubdOptions = {
       legend: {
         position: 'bottom',
         labels: {
@@ -254,16 +254,16 @@
         mode: 'index',
         position: 'nearest'
       }
-    };
+    };*/
 
-    var ubdCtx = document.getElementsByClassName('blog-users-by-device')[0];
+    /*var ubdCtx = document.getElementsByClassName('blog-users-by-device')[0];
 
     // Generate the users by device chart.
     window.ubdChart = new Chart(ubdCtx, {
       type: 'pie',
       data: ubdData,
       options: ubdOptions
-    });
+    });*/
 
   });
 })(jQuery);
