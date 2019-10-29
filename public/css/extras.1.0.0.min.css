@@ -10,6 +10,18 @@
     animation-iteration-count: infinite
 }
 
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../webfonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../webfonts/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../webfonts/MaterialIcons-Regular.woff) format('woff'),
+    url(../webfonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
 @-webkit-keyframes bounceIn {
     20%,
     40%,
@@ -604,8 +616,70 @@
         display: none!important
     }
 }
-
+@media only screen and (max-width: 500px) {
+    /*group signin form*/
+    .group-form {
+      position: relative;
+      width: 200px;
+      height: 50px;
+      background: #fff;
+      border-radius: 50px;
+    }
+    .group-form{
+        left: 0;
+    }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+ .group-form {
+   position: relative;
+   width: 250px !important;
+   height: 60px !important;
+   background: #fff;
+   border-radius: 50px;
+ }
+ .group-form{
+     left: 0%;
+ }
+}
+@media (min-width: 580px) and (max-width : 768px) {
+ .group-form {
+   position: relative;
+   width: 300px !important;
+   height: 70px !important;
+   background: #fff;
+   border-radius: 50px;
+ }
+ .group-form{
+     left: 30% !important;
+ }
+}
+@media (max-width: 280px){
+    .group-form {
+      position: relative;
+      width: 180px !important;
+      height: 70px !important;
+      background: #fff;
+      border-radius: 50px;
+    }
+    .group-form{
+        left: 0% !important;
+    }
+    .mt-5{
+        margin-top: 10px !important;
+    }
+    .signup-toggle{cursor:pointer;margin-top:40px !important;}
+}
 @media (max-width:500px) {
+    .group-form {
+      position: relative;
+      width: 250px !important;
+      height: 60px !important;
+      background: #fff;
+      border-radius: 50px;
+    }
+    .group-form{
+        left: 0%;
+    }
     .promo-popup {
         left: 10px;
         right: 10px;
@@ -640,3 +714,32 @@
 .br{
     border-right: 1px solid #17c671;
 } 
+
+.signup-body{
+    /*background: #17c671;*/
+    background: #76b852;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size:cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+.big-box{
+    min-height:400px;
+    border-top:3px solid #2196F3;
+    margin-top:80px;
+    margin-bottom:100px;
+    background: #fff;
+}
+
+.login{
+    margin-top:25px;
+    border-right:1px solid #ddd;
+}
+.login h4, .signup h4{font-weight:200;}
+.signup{margin-top:25px;}
+.policy{visibility: hidden;}
+.signupForm{display: none;}
+.signup-toggle{cursor:pointer;margin-top:140px;}
+

@@ -2,7 +2,9 @@ RewriteEngine On    # Turn on the rewriting engine
 AddType application/x-httpd-php .idack
 SetEnvIf Request_URI "^.*" base_path=http://localhost/modelx/
 
-DirectoryIndex index.idack
+DirectoryIndex home.idack
 
 RewriteRule    ^app/?$ base_path/    [NC]
 RewriteRule    ^profile/?$ profile.idack [NC]
+RewriteRule    ^join-us/?$ join.idack [NC]
+RewriteRule    ^dashboard/?$ dashboard.idack [NC]

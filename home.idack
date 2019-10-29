@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+
+	<title>Idack | Home</title>
+	<script type="application/x-javascript"> 
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);function hideURLbar(){ window.scrollTo(0,1); } 
+	</script>
+	<link href="public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="public/css/home.css" rel="stylesheet" type="text/css" media="all" />
+
+	<script type="text/javascript" src="public/js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="public/css/flexslider.css" type="text/css" media="screen" property="" />
+	<!-- gallery -->
+	<link href="public/css/lsb.css" rel="stylesheet" type="text/css">
+	<link href="public/css/fontawesome-5.2.0-all.css" rel="stylesheet"> 
+	<!-- <link href="public/css/font-awesome.css" rel="stylesheet">  -->
+	<!-- //font-awesome-icons -->
+	<link href="//fonts.googleapis.com/css?family=Prompt:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,thai,vietnamese" rel="stylesheet">
+</head>
+	<!-- banner -->
+	<div class="banner">
+		<nav class="navbar navbar-default">
+			<div class="navbar-header navbar-left">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<h1><a class="navbar-brand" href="#"><span>I</span>dack</a></h1>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+				<nav class="link-effect-2" id="link-effect-2">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#"><span data-hover="Home">Home</span></a></li>
+						<li><a href="#"><span data-hover="About">About</span></a></li>
+						<li><a href="#"><span data-hover="FAQS">FAQS</span></a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span data-hover="Join Us">Join Us</span> <b class="caret"></b></a>
+							<ul class="dropdown-menu agile_short_dropdown">
+								<li><a href="join-us/">Sign In</a></li>
+								<li><a href="join-us/">Sign Up</a></li>
+							</ul>
+						</li>
+						<li><a href="#"><span data-hover="Contact Us">Contact Us</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="w3_agile_phone">
+				<p><i class="fa fa-phone" aria-hidden="true"></i> 020 145 9111</p>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="agile_banner_info">
+				<div class="agile_banner_info1">
+					<h3><span>Together</span> we build greater wealth </h3>
+					<div id="typed-strings" class="agileits_w3layouts_strings">
+						<p>take <i>responsibility</i> for your own future</p>
+						<p><i>opportunity</i> to regularize your income flow</p>
+						<p>determine how much you want to <i>grow</i></p>
+					</div>
+					<span id="typed" style="white-space:pre;"></span>
+				</div>
+			</div>
+			<div class="banner_agile_para">
+				<p class="text-center">We offer you the best online networking service, highly profitable investment plans, timely pay-outs, safety of your funds and protection of your personal information.</p>
+			</div>
+			<div class="w3_agile_social_icons">
+				<ul class="agileinfo_social_icons">
+					<li><a href="#" class="w3_agileits_facebook"><i class="far fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="wthree_twitter"><i class="far fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="agileinfo_google"><i class="far fa-google-plus" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+			<div class="w3_banner_color">
+				<span></span>
+			</div>
+			<div class="w3_scroll_arrow">
+			  <a href="#calculator" class="scroll scroll-down"><span class="dot"> </span></a>
+			</div>
+		</div>
+	</div>
+	<div class="banner-bottom">
+		<div class="container">
+			<div class="col-md-6 w3ls_banner_bottom_left">
+				<div class="w3ls_banner_bottom_left1">
+					<span class="" aria-hidden="true"></span>
+				</div>
+				<div class="w3ls_banner_bottom_right1">
+					<h2>the whole purpose of <span>education</span> is to turn mirrors into windows</h2>
+					<p>Pellentesque convallis diam consequat magna vulputate malesuada. 
+						Cras a ornare elit. Nulla viverra pharetra sem, eget pulvinar neque pharetra ac.</p>
+					<div class="w3l_more">
+						<a href="#" class="button button--nina" data-text="Join Us" data-toggle="modal" data-target="#myModal">
+							<span>J</span><span>o</span><span>i</span><span>n</span> <span>U</span><span>s</span>
+						</a>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-6 w3ls_banner_bottom_right">
+				<section class="slider">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>	
+								<div class="agileits_w3layouts_banner_bottom_grid">
+									<img src="public/images/bgs/sl1.jpg" alt=" " class="img-responsive" />
+								</div>
+							</li>
+							<li>	
+								<div class="agileits_w3layouts_banner_bottom_grid">
+									<img src="public/images/bgs/sl2.jpg" alt=" " class="img-responsive" />
+								</div>
+							</li>
+							<li>	
+								<div class="agileits_w3layouts_banner_bottom_grid">
+									<img src="public/images/bgs/sl3.jpg" alt=" " class="img-responsive" />
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+	<!-- calculator -->
+	<div class="calculator" id="calculator">
+		<div class="container">
+			<div class="col-md-6 w3layouts_calculator_right">
+				<form action="#" method="post">	
+					<select class="form-controls" name="plan" id="plan">
+						<option value="0">0</option>
+						<option value="100">100</option>
+						<option value="250">250</option>
+						<option value="500">500</option>
+						<option value="1000">1000</option>
+						<option value="2000">2000</option>
+						<option value="5000">5000</option>
+						<option value="10000">10000</option>
+					</select>
+					<p class="text-center" style="color: white;">Returns (GHC)</p><br>
+					<input id="returns" name="returns" placeholder="returns" type="text" disabled="">
+				</form>
+			</div>
+			<div class="col-md-6 w3layouts_calculator_left msk">
+				<h3>Checkout the <span>Returns</span></h3>
+				<p>Aliquam sit amet sapien felis. Proin vel dolor sed risus maximus gravida. 
+					Ut suscipit orci sem, eget lobortis sem dictum eu. Etiam congue ex sed volutpat fringilla.</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+	<!-- testimonials -->
+	<div class="testimonials">
+		<div class="container">
+			<div class="w3_agile_team_grid">
+				<div class="w3_agile_team_grid_left">
+					<span class="" aria-hidden="true"></span>
+				</div>
+				<div class="w3_agile_team_grid_right">
+					<h3>What Our <span>Investors</span> Say</h3>
+					<p>Aliquam sit amet sapien felis. Proin vel dolor sed risus maximus gravida. 
+						Ut suscipit orci sem, eget lobortis sem dictum eu. Etiam congue ex sed volutpat fringilla.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="w3ls_testimonials_grids">
+				 <section class="center slider">
+						<div class="agileits_testimonial_grid">
+							<div class="w3l_testimonial_grid">
+								<p>In eu auctor felis, id eleifend dolor. Integer bibendum dictum erat, 
+									non laoreet dolor.</p>
+								<h4>Rosy Crisp</h4>
+								<h5>3 Stars</h5>
+								<div class="w3l_testimonial_grid_pos">
+									<!-- <img src="images/1.png" alt=" " class="img-responsive" /> -->
+								</div>
+							</div>
+						</div>
+						<div class="agileits_testimonial_grid">
+							<div class="w3l_testimonial_grid">
+								<p>In eu auctor felis, id eleifend dolor. Integer bibendum dictum erat, 
+									non laoreet dolor.</p>
+								<h4>Laura Paul</h4>
+								<h5>2 Stars</h5>
+								<div class="w3l_testimonial_grid_pos">
+									<!-- <img src="images/2.png" alt=" " class="img-responsive" /> -->
+								</div>
+							</div>
+						</div>
+						<div class="agileits_testimonial_grid">
+							<div class="w3l_testimonial_grid">
+								<p>In eu auctor felis, id eleifend dolor. Integer bibendum dictum erat, 
+									non laoreet dolor.</p>
+								<h4>Michael Doe</h4>
+								<h5>1 Star</h5>
+								<div class="w3l_testimonial_grid_pos">
+									<!-- <img src="images/3.png" alt=" " class="img-responsive" /> -->
+								</div>
+							</div>
+						</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<div class="gallery-top">
+		<div class="agileinfo_gallery_top">
+			<h3>The easiest way to manage your money is to take it <span>one step at a time</span> and not worry about being perfect</h3>
+		</div>
+	</div>
+
+
+
+
+	<script src="public/js/slick.js"></script>
+	<script src="public/js/jquery.flexisel.js"></script>
+	<script src="public/js/lsb.min.js"></script>
+	<script defer src="public/js/jquery.flexslider.js"></script>
+	<script src="public/js/typed.js"></script>
+	<script src="public/js/move-top.js"></script>
+	<script src="public/js/easing.js"></script>
+	<script src="public/js/bootstrap.js"></script>
+    <script>
+		$(function(){
+
+			$("#typed").typed({
+				stringsElement: $('#typed-strings'),
+				typeSpeed: 30,
+				backDelay: 1500,
+				loop: true,
+				contentType: 'html', 
+				loopCount: false
+			});
+
+		  	$('.flexslider').flexslider({
+				animation: "slide",
+				start: function(slider){
+				  $('body').removeClass('loading');
+				}
+		  	});
+
+		  	$(".scroll").click(function(event){		
+		  		event.preventDefault();
+		  		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		  	});
+
+	  	  	$(".center").slick({
+	  			dots: true,
+	  			infinite: true,
+	  			centerMode: true,
+	  			slidesToShow: 2,
+	  			slidesToScroll: 2,
+	  			responsive: [
+	  				{
+	  				  breakpoint: 768,
+	  				  settings: {
+	  					arrows: true,
+	  					centerMode: false,
+	  					slidesToShow: 2
+	  				  }
+	  				},
+	  				{
+	  				  breakpoint: 480,
+	  				  settings: {
+	  					arrows: true,
+	  					centerMode: false,
+	  					centerPadding: '40px',
+	  					slidesToShow: 1
+	  				  }
+	  				}
+	  			]
+	  	  	});
+
+	  	 
+	  	  	$('#plan').on('change', function (e) {
+	  	  	    var optionSelected = $("option:selected", this);
+	  	  	    var valueSelected = this.value;
+	  	  	    var result = valueSelected * 1.5;
+	  	  	    $("#returns").val(result);
+	  	  	});
+
+
+		});
+		
+    </script>
+</body>
+</html>

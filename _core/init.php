@@ -9,7 +9,7 @@
 
  	define("HOST", "localhost");
    	define("USER", "admin"/*database username*/);
-    define("PASS", "ILive@kasoa1" /*database password*/);
+    define("PASS", "" /*database password*/);
     define("HOST_DB", "modelx");
 
     define("SMPASS", "myQwerty1");

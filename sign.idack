@@ -1,0 +1,356 @@
+<?php include('_core/yhup.php'); ?>
+<!DOCTYPE html>
+<html class="no-js h-100" lang="en">
+
+<head>
+  <?php echo $appbase; ?>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Idack Investments| SignIn - Sign Up</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" type="text/css" href="public/css/bootstrap4.0.min.css">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+  <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="public/css/sign.css">
+  <script src="public/js/modernizr.min.js" type="text/javascript"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+
+  <body>
+  <header role="banner">
+    <div id="cd-logo"><a href="#0"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-logo_1.svg" alt="Logo"></a></div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a class="cd-signin" href="signup/#">Sign in</a></li>
+        <li><a class="cd-signup" href="signup/#">Sign up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="cd-user-modal "> <!-- this is the entire modal form, including the background -->
+    <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+      <ul class="cd-switcher">
+        <li><a href="#0">Sign in</a></li>
+        <li><a href="#0">New account</a></li>
+      </ul>
+
+      <div id="cd-login"> <!-- log in form -->
+        <form class="cd-form">
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="signin-email">E-mail or Username</label>
+            <input class="full-width has-padding has-border" id="signin-email" type="text" placeholder="E-mail or Username">
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-password" for="signin-password">Password</label>
+            <input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="Password">
+            <a href="#0" class="hide-password">Show</a>
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <input type="checkbox" id="remember-me" checked>
+            <label for="remember-me">Remember me</label>
+          </p>
+
+          <p class="fieldset">
+            <input class="full-width" type="submit" value="Login">
+          </p>
+        </form>
+        
+        <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+      </div> <!-- cd-login -->
+
+      <div id="cd-signup"> <!-- sign up form -->
+        <form class="cd-form">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <p class="fieldset">
+                <label class="image-replace cd-name" for="firstname">First Name</label>
+                <input class="full-width has-padding has-border" id="firstname" type="text" placeholder="First Name *" required="">
+                <span class="cd-error-message">Error message here!</span>
+              </p>
+            </div>
+            <div class="col-12 col-sm-6">
+              <p class="fieldset">
+                <label class="image-replace cd-name" for="lastname">Last Name</label>
+                <input class="full-width has-padding has-border" id="lastname" type="text" placeholder="Last Name *" required="">
+                <span class="cd-error-message">Error message here!</span>
+              </p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 col-sm-6">
+              <p class="fieldset">
+                <label class="image-replace cd-username" for="signup_username">Username</label>
+                <input class="full-width has-padding has-border" id="signup_username" type="text" name="signup_username" placeholder="Username *" required="">
+                <span class="cd-error-message">Error message here!</span>
+              </p>
+            </div>
+            <div class="col-12 col-sm-6">
+              <p class="fieldset">
+                <label class="image-replace cd-email" for="signup_email">E-mail</label>
+                <input class="full-width has-padding has-border" id="signup_email" type="email" name="signup_email" placeholder="E-mail (Optional)">
+                <span class="cd-error-message">Error message here!</span>
+              </p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 col-sm-6">
+              <p class="fieldset">
+                <label class="image-replace cd-contact" for="contact_phone">Contact Phone</label>
+                <input class="full-width has-padding has-border" data-inputmask="'mask':'999 999 9999'" id="contact_phone" type="text" name="contact_phone" placeholder="Contact Phone *" required="">
+                <span class="cd-error-message">Error message here!</span>
+              </p>
+            </div>
+            <div class="col-12 col-sm-6">
+              <p class="fieldset">
+                <label class="image-replace cd-bank" for="bank_phone">Mobile Money Number</label>
+                <input class="full-width has-padding has-border" data-inputmask="'mask':'999 999 9999'" id="bank_phone" type="text" name="bank_phone" placeholder="Mobile Money Number *" required="">
+                <span class="cd-error-message">Error message here!</span>
+              </p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 col-sm-6">
+              <p class="fieldset">
+                <label class="image-replace cd-network" for="bank_network">Mobile Money Network</label>
+                <select class="full-width has-padding has-border form-control" name="bank_network" id="bank_network" required="">
+                  <option class="text-muted">Mobile Money Network</option>
+                  <option value="airtel_tigo">Airtel Tigo</option>
+                  <option value="mtn">MTN</option>
+                  <option value="vodafone">Vodafone</option>
+                </select>
+                <span class="cd-error-message">Error message here!</span>
+              </p>
+            </div>
+            <div class="col-12 col-sm-6">
+              <p class="fieldset">
+                <label class="image-replace cd-country" for="country">Country</label>
+                <input class="full-width has-padding has-border " id="country" type="text" name="country" placeholder="Country" value="Ghana" readonly="">
+                <span class="cd-error-message">Error message here!</span>
+              </p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <p class="fieldset">
+                <label class="image-replace cd-password" for="up_password">Password</label>
+                <input class="full-width has-padding has-border" id="up_password" type="password"  placeholder="Password" required="">
+                <a href="#0" class="hide-password">Show</a>
+                <span class="cd-error-message">Error message here!</span>
+              </p>
+            </div>
+            <div class="col-12 mt-3">
+              <p class="fieldset">
+                <label class="image-replace cd-password" for="up_password2">Confirm Password</label>
+                <input class="full-width has-padding has-border" id="up_password2" type="password"  placeholder="Confrim Password" required="">
+                <span class="cd-error-message">Error message here!</span>
+              </p>
+            </div>
+          </div>
+          <p class="fieldset">
+            <input type="checkbox" id="accept-terms" name="accept_terms">
+            <label for="accept-terms">I agree to the <a href="#">Terms</a></label>
+          </p>
+
+          <p class="fieldset">
+            <input class="full-width has-padding" type="submit" value="Create account">
+          </p>
+        </form>
+
+        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+      </div> <!-- cd-signup -->
+
+      <div id="cd-reset-password"> <!-- reset password form -->
+        <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+        <form class="cd-form">
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="reset-email">E-mail</label>
+            <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <input class="full-width has-padding" type="submit" value="Reset password">
+          </p>
+        </form>
+
+        <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+      </div> <!-- cd-reset-password -->
+      <a href="#0" class="cd-close-form">Close</a>
+    </div> <!-- cd-user-modal-container -->
+  </div> <!-- cd-user-modal -->
+</body>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="public/js/popper.min.js"></script>
+  <script src="public/js/bootstrap4.min.js"></script>
+  <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
+
+  
+    <script type="text/javascript">
+      $(document).ready(function (){
+        $(":input").inputmask();
+      });
+    </script>
+    <script>
+      jQuery(document).ready(function($){
+        var $form_modal = $('.cd-user-modal'),
+          $form_login = $form_modal.find('#cd-login'),
+          $form_signup = $form_modal.find('#cd-signup'),
+          $form_forgot_password = $form_modal.find('#cd-reset-password'),
+          $form_modal_tab = $('.cd-switcher'),
+          $tab_login = $form_modal_tab.children('li').eq(0).children('a'),
+          $tab_signup = $form_modal_tab.children('li').eq(1).children('a'),
+          $forgot_password_link = $form_login.find('.cd-form-bottom-message a'),
+          $back_to_login_link = $form_forgot_password.find('.cd-form-bottom-message a'),
+          $main_nav = $('.main-nav');
+
+        //open modal
+        $main_nav.on('click', function(event){
+          event.preventDefault();
+          if( $(event.target).is($main_nav) ) {
+            // on mobile open the submenu
+            $(this).children('ul').toggleClass('is-visible');
+          } else {
+            // on mobile close submenu
+            $main_nav.children('ul').removeClass('is-visible');
+            //show modal layer
+            $form_modal.addClass('is-visible'); 
+            //show the selected form
+            ( $(event.target).is('.cd-signup') ) ? signup_selected() : login_selected();
+          }
+
+        });
+
+        //close modal
+        $('.cd-user-modal').on('click', function(event){
+          if( $(event.target).is($form_modal) || $(event.target).is('.cd-close-form') ) {
+            $form_modal.removeClass('is-visible');
+          } 
+        });
+        //close modal when clicking the esc keyboard button
+        $(document).keyup(function(event){
+            if(event.which=='27'){
+              $form_modal.removeClass('is-visible');
+            }
+          });
+
+        //switch from a tab to another
+        $form_modal_tab.on('click', function(event) {
+          event.preventDefault();
+          ( $(event.target).is( $tab_login ) ) ? login_selected() : signup_selected();
+        });
+
+        //hide or show password
+        $('.hide-password').on('click', function(e){
+          e.preventDefault();
+          var $this= $(this),
+            $password_field = $this.prev('input');
+          
+          ( 'password' == $password_field.attr('type') ) ? $password_field.attr('type', 'text') : $password_field.attr('type', 'password');
+          ( 'Hide' == $this.text() ) ? $this.text('Show') : $this.text('Hide');
+          //focus and move cursor to the end of input field
+          $password_field.putCursorAtEnd();
+        });
+
+        //show forgot-password form 
+        $forgot_password_link.on('click', function(event){
+          event.preventDefault();
+          forgot_password_selected();
+        });
+
+        //back to login from the forgot-password form
+        $back_to_login_link.on('click', function(event){
+          event.preventDefault();
+          login_selected();
+        });
+
+        function login_selected(){
+          $form_login.addClass('is-selected');
+          $form_signup.removeClass('is-selected');
+          $form_forgot_password.removeClass('is-selected');
+          $tab_login.addClass('selected');
+          $tab_signup.removeClass('selected');
+        }
+
+        function signup_selected(){
+          $form_login.removeClass('is-selected');
+          $form_signup.addClass('is-selected');
+          $form_forgot_password.removeClass('is-selected');
+          $tab_login.removeClass('selected');
+          $tab_signup.addClass('selected');
+        }
+
+        function forgot_password_selected(){
+          $form_login.removeClass('is-selected');
+          $form_signup.removeClass('is-selected');
+          $form_forgot_password.addClass('is-selected');
+        }
+
+        //REMOVE THIS - it's just to show error messages 
+        $form_login.find('input[type="submit"]').on('click', function(event){
+          event.preventDefault();
+          $form_login.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
+        });
+        $form_signup.find('input[type="submit"]').on('click', function(event){
+          event.preventDefault();
+          $form_signup.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
+        });
+
+
+        //IE9 placeholder fallback
+        //credits http://www.hagenburger.net/BLOG/HTML5-Input-Placeholder-Fix-With-jQuery.html
+        if(!Modernizr.input.placeholder){
+          $('[placeholder]').focus(function() {
+            var input = $(this);
+            if (input.val() == input.attr('placeholder')) {
+              input.val('');
+              }
+          }).blur(function() {
+            var input = $(this);
+              if (input.val() == '' || input.val() == input.attr('placeholder')) {
+              input.val(input.attr('placeholder'));
+              }
+          }).blur();
+          $('[placeholder]').parents('form').submit(function() {
+              $(this).find('[placeholder]').each(function() {
+              var input = $(this);
+              if (input.val() == input.attr('placeholder')) {
+                input.val('');
+              }
+              })
+          });
+        }
+
+      });
+
+      jQuery.fn.putCursorAtEnd = function() {
+        return this.each(function() {
+            // If this function exists...
+            if (this.setSelectionRange) {
+                // ... then use it (Doesn't work in IE)
+                // Double the length because Opera is inconsistent about whether a carriage return is one character or two. Sigh.
+                var len = $(this).val().length * 2;
+                this.setSelectionRange(len, len);
+            } else {
+              // ... otherwise replace the contents with itself
+              // (Doesn't work in Google Chrome)
+                $(this).val($(this).val());
+            }
+        });
+      };
+    </script>
+
+</body>
+
+</html>
